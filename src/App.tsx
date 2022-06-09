@@ -9,7 +9,7 @@ function App() {
 
   return (
     <div className="App">
-      <Canvas>
+      <Canvas gl={{ alpha: false }} dpr={[1, 1.5]}>
         <OrbitControls />
         <Suspense fallback={null}>
           <EmptyRoom scale={0.1} />
